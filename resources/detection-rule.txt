@@ -1,0 +1,43 @@
+** Detect **
+
+events:
+  - NEW_PROCESS
+  - EXISTING_PROCESS
+op: and
+rules:
+  - op: is windows
+  - op: or
+    rules:
+      - op: ends with
+        path: event/FILE_PATH
+        value: lazagne.exe
+        case sensitive: false
+      - op: ends with
+        path: event/COMMAND_LINE
+        value: all
+        case sensitive: false
+      - op: contains
+        path: event/COMMAND_LINE
+        value: lazagne
+        case sensitive: false
+      - op: is
+        path: event/HASH
+        value: dc06d62ee95062e714f2566c95b8edaabfd387023b1bf98a09078b84007d5268
+        case sensitive: false
+
+
+
+** Response **
+
+- action: report
+  metadata: 
+    author: HuntX
+    description: Detects the execution of LaZagne (credential access tool) a process
+      from view
+    falsepositives:
+    - To the Moon
+    level: medium
+    tags:
+    - attack.credential_access
+    - attack.t1218
+  name: LaZagne (credential access tool) Execution Detected
