@@ -1,4 +1,4 @@
-# SOC Automation Lab: Automated Threat Detection & Response with LimaCharlie, Tines, Slack
+# SOC-Incident-Triage-and-Alert-Enrichment-Lab
 
 ## Project Overview
 
