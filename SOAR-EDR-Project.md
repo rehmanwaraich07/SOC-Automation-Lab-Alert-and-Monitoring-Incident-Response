@@ -1,4 +1,6 @@
-# SOC Automation Lab: Automated Threat Detection & Response with LimaCharlie, Tines, Slack
+# SOC Automation Lab: Alert and Monitoring Incident Response
+
+Repository: https://github.com/rehmanwaraich07/SOC-Automation-Lab-Alert-and-Monitoring-Incident-Response
 
 ## Project Overview
 

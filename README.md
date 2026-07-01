@@ -1,4 +1,6 @@
-# SOC-Incident-Triage-and-Alert-Enrichment-Lab
+# SOC Automation Lab: Alert and Monitoring Incident Response
+
+Repository: https://github.com/rehmanwaraich07/SOC-Automation-Lab-Alert-and-Monitoring-Incident-Response
 
 ## Project Overview
 
